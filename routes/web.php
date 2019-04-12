@@ -19,6 +19,7 @@ Route::get('/info', function () {
 });
 //Route::get('/Weixin/valid','WxController@valid');
 Route::get('/Wx/get_Access_Token','WxController@getAccessToken');
-Route::get('/Wx/valid','WxController@wxEvent');
+Route::get('/Wx/valid','WxController@valid');
+Route::post('/Wx/valid','WxController@wxEvent');
 Route::get('/user','UserController@user');
 Route::get('/test','WxController@test');
